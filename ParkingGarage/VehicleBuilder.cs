@@ -8,6 +8,6 @@ namespace ParkingGarage
 {
     internal class VehicleBuilder
     {
-
+        
     }
 }
