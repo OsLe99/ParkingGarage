@@ -26,17 +26,16 @@ namespace ParkingGarage
             int passengerAmount = Helpers.GeneratePassengers();
             if (type == 0)
             {
-                CurrentVehicles.Add(new Car (color, regNumber, isElectric, 0));
+                CurrentVehicles.Add(new Car (color, regNumber, isElectric, 0, 1));
             }
             else if (type == 1)
             {
-                CurrentVehicles.Add(new Motorbike (color, regNumber, "Harley", 0));
+                CurrentVehicles.Add(new Motorbike (color, regNumber, brand, 0, 0.5));
             }
             else
             {
-                CurrentVehicles.Add(new Bus(color, regNumber, passengerAmount, 0));
+                CurrentVehicles.Add(new Bus(color, regNumber, passengerAmount, 0, 2));
             }
-
         }
     }
 }

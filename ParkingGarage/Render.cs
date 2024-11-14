@@ -10,9 +10,11 @@ namespace ParkingGarage
     {
         public static void DrawParking()
         {
+            int spot = 0;
             foreach (Vehicle vehicle in ParkingSpace.CurrentVehicles)
             {
-                Console.WriteLine($"{vehicle.GetType().Name} Färg: {vehicle.Color} Regplåt: {vehicle.RegNumber}");
+                spot++;
+                Console.WriteLine($"{spot} {vehicle.GetType().Name} Färg: {vehicle.Color} Regplåt: {vehicle.RegNumber} Storlek: {vehicle.Size}");
             }
         }
     }
